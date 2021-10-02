@@ -1,0 +1,12 @@
+* Inbox
+** [2021-10-03 Sun 00:10] Used openzeppelin mock contracts and test scripts
+for more detail visit,
+https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/mocks
+https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/test
+
+** [2021-10-03 Sun 00:01] for testing on local networks
+You may choose one of them and must run on terminal before the running test scripts.
+1. truffle develop (port can't change always 8545)
+2. ganache cli (port can be set like 9545)
+
+set port or network setting in truffle-config.js
