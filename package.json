@@ -7,7 +7,7 @@
     "truffle:compile": "truffle compile",
     "truffle:start-dev-server": "truffle develop",
     "truffle:dev-test": "truffle test --network development",
-    "truffle:dev-migrate": "echo \"BEFORE DON'T FORGET TO RUN 'truffle develop'\" && npm run truffle:compile && truffle migrate --network development",
+    "truffle:dev-migrate": "truffle migrate --network development",
     "rinkeby:migrate": "truffle migrate --network rinkeby",
     "rinkeby:reset-and-migrate": "truffle migrate --reset --network rinkeby",
     "rinkeby:verify-contract": "truffle run verify ERC20Mock --network rinkeby"
