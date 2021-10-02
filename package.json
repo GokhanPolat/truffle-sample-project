@@ -4,8 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "truffle:compile": "truffle compile",
+    "truffle:start-dev-server": "truffle develop",
+    "truffle:dev-test": "truffle test --network development",
+    "truffle:dev-migrate": "echo \"BEFORE DON'T FORGET TO RUN 'truffle develop'\" && npm run truffle:compile && truffle migrate --network development",
+    "rinkeby:migrate": "truffle migrate --network rinkeby",
+    "rinkeby:reset-and-migrate": "truffle migrate --reset --network rinkeby",
+    "rinkeby:verify-contract": "truffle run verify ERC20Mock --network rinkeby"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.13",
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "chai": "^4.3.4",
+    "chai-bignumber": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "truffle-plugin-verify": "^0.5.15",
+    "web3": "^1.6.0"
+  }
 }
