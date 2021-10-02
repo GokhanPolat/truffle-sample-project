@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,emacs,visualstudiocode,visualstudio,node,solidity,soliditytruffle
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,emacs,visualstudiocode,visualstudio,node,solidity,soliditytruffle
+# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,emacs,vim,visualstudiocode,visualstudio,node,solidity,soliditytruffle
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,emacs,vim,visualstudiocode,visualstudio,node,solidity,soliditytruffle
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
@@ -59,8 +59,7 @@ flycheck_*.el
 .LSOverride
 
 # Icon must end with two \r
-Icon
-
+Icon
 
 # Thumbnails
 ._*
@@ -201,6 +200,10 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+### Node Patch ###
+# Serverless Webpack directories
+.webpack/
+
 ### Solidity ###
 # Logs
 
@@ -288,6 +291,26 @@ blockchain/history
 #truffle
 yarn.lock
 package-lock.json
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
 
 ### VisualStudioCode ###
 .vscode/*
@@ -709,15 +732,12 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,emacs,visualstudiocode,visualstudio,node,solidity,soliditytruffle
+# End of https://www.toptal.com/developers/gitignore/api/macos,windows,emacs,vim,visualstudiocode,visualstudio,node,solidity,soliditytruffle
 
 
 ### CUSTOM IGNORE RULES
-node_modules
-.env
 
 #Hardhat files
 cache/
 artifacts/
 deployments/
-
